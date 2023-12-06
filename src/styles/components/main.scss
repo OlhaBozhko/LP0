@@ -1,0 +1,48 @@
+.list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  &__link {
+    color: black;
+    text-decoration: underline;
+    text-shadow: 0px 0px 15px #cbbfbf;
+  }
+}
+
+.main {
+  background: url(../img/main-mob.jpg);
+  background-position: center bottom;
+
+  &__ttl {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+
+  &__sbtl {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    display: block;
+    margin: auto;
+    border-radius: 7px;
+    background: #FF6262;
+    font-size: 22px;
+    font-weight: 500;
+    color: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    text-align: center;
+    min-width: 270px;
+    max-width: fit-content;
+  }
+ 
+}
+

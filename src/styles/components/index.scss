@@ -1,19 +1,13 @@
-.foo {
-   width: 240px;
- }
-  
- @media screen and (min-width: 768px) {
-   .foo {
-     width: 576px;
-   }
- }
-  
- .bar {
-   width: 160px;
- }
-  
- @media screen and (min-width: 768px) {
-   .bar {
-     width: 384px;
-   }
- }
+@import "main";
+@import "main-bottom";
+@import "about";
+@import "reviews";
+@import "info";
+@import "discount";
+@import "media";
+@import "last";
+@import "last-bottom";
+
+.back-color {
+  background: #957BB7;
+}
