@@ -1,21 +1,45 @@
+.last {
+  @include rm(1220) {
+    padding: 120px 0 180px;
+              }
+}
+
 .form {
   max-width: 270px;
   margin: auto;
 
+  @include rm(800) {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+  }
+
   &__group {
     margin-bottom: 15px;
     width: 100%;
+    max-width: 300px;
     border: 1px solid #C4C4C4;
-  
+
     color: #666;
     font-size: 18px;
     padding: 15px 20px;
     border-radius: 7px;
+
+    @include rm(800) {
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
   }
 
   &__btn {
     width: 100%;
     padding: 15px 60px;
     font-size: 22px;
+
+    @include rm(800) {
+      padding: 15px 40px;
+      max-width: 275px;
+    }
   }
 }

@@ -1,7 +1,16 @@
 .main-bottom {
+  @include rm(1220) {
+    padding: 50px 0;
+  }
+
   &__txt {
     font-size: 18px;
     color: #FFF;
     text-align: center;
+
+    @include rm(1024) {
+      font-size: 20px;
+    }
+
   }
 }

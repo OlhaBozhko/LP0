@@ -1,8 +1,12 @@
 .info {
   font-size: 19px;
-
+  @include rm(1220) {
+    padding: 70px 0;
+              }
   &__img {
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 860px;
   }
 
   &__sbtl {
@@ -12,10 +16,16 @@
     color: #151515;
     margin-bottom: 20px;
     font-weight: 700;
+    @include rm(768) {
+font-size: 20px;
+    }
   }
 
   &__txt {
     margin-bottom: 20px;
+    @include rm(768) {
+      font-size: 20px;
+          }
   }
 
 }

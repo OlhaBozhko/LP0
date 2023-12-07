@@ -1,45 +1,88 @@
 .order {
-    color: #fff;
+  color: #fff;
+  @include rm(1220) {
+    padding: 90px 0;
+              }
 }
-.box {
-    
-    &__item {
-       
-        text-align: center;
-        &:not(:last-child) {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-    }
-        &:not(:last-child) {
-            position: relative;
-            &:after {
-                content: '';
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                bottom: 0;
-                width: 80%;
-                max-width: 200px;
-                height: 1px;
-                background-color: rgba(255, 255, 255, 0.2)
-            }
-           
-        }
-    }
-    &__img {
-        background-color: #fff;
-        border-radius: 50%;
 
-        display: flex;align-items: center;
-        justify-content: center;
-        margin: 0 auto 15px;
-        width: 89px;
-        height: 89px;
+.box {
+  @include rm(640) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include rm(800) {
+flex-wrap: nowrap;
+  }
+
+  &__item {
+
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+
+      @include rm(800) {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-right: 15px;
+        padding-right: 15px;
+      }
     }
-    &__ttl {
-        font-weight: 700;
-        font-size: 22px;
-        margin-bottom: 10px;
+
+    &:not(:last-child) {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 80%;
+        max-width: 200px;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+
+        @include rm(800) {
+          transform: translateX(50%) rotate(90deg);
+          right: 0;
+          top: 50%;
+          left: auto;
+        }
+      }
+
     }
-   
+
+    @include rm(640) {
+      width: 50%;
+    }
+
+    @include rm(800) {
+      width: 25%;
+    }
+  }
+
+  &__img {
+    background-color: #fff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    width: 89px;
+    height: 89px;
+  }
+
+  &__ttl {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+
+    @include rm(800) {
+      font-size: 20px;
+    }
+  }
+
 }

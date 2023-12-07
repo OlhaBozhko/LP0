@@ -1,11 +1,25 @@
 .reviews {
-    .slick-dots .slick-active {
-        background: #FFF;
-      }
+  @include rm(1220) {
+    padding: 90px 0;
+              }
+  .slick-dots .slick-active {
+    background: #FFF;
+  }
+
   .slick-dots {
     bottom: -50px;
+
     & li {
       background: #D0D0D0;
+    }
+  }
+
+  &__slider-r {
+    max-width: 500px;
+    margin: auto;
+
+    @include rm(768) {
+      max-width: 100%;
     }
   }
 }
@@ -14,12 +28,29 @@
   color: #FFF;
   margin-bottom: 50px;
 
+  &__item {
+    @include rm(768) {
+      display: flex;
+      align-items: start;
+    }
+  }
+
+
+
   &__img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 20px;
+
+    @include rm(768) {
+      width: 200px;
+      height: 200px;
+      flex-shrink: 0;
+      margin: 0;
+      margin-right: 25px;
+    }
   }
 
   &__txt {
@@ -53,9 +84,15 @@
     font-weight: 500;
     font-size: 20px;
   }
+
   & .arrow {
     border-right: 3px solid #fff;
     border-top: 3px solid #fff;
     top: 65px;
+
+    @include rm(768) {
+      top: auto;
+
+    }
   }
 }

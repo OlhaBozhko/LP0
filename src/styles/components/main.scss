@@ -3,13 +3,34 @@
   margin-bottom: 50px;
   justify-content: center;
 
+  @include rm(800) {
+    justify-content: start;
+  }
+
+  @include rm(480) {
+    margin-bottom: 120px;
+  }
+
   &__item:not(:last-child) {
     margin-right: 20px;
   }
+
   &__link {
     color: black;
     text-decoration: underline;
     text-shadow: 0px 0px 15px #cbbfbf;
+
+    @include rm(480) {
+      font-size: 18px;
+    }
+
+    @include rm(800) {
+      font-size: 20px;
+    }
+
+    @include rm(1024) {
+      font-size: 22px;
+    }
   }
 }
 
@@ -17,16 +38,71 @@
   background: url(../img/main-mob.jpg);
   background-position: center bottom;
 
+  @include rm(768) {
+    background-size: 100%;
+  }
+
+  @include rm(800) {
+    padding-top: 20px;
+    background: #cdd5d8 url(../img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 107%;
+    background-position: 34% -8%;
+  }
+
+  @include rm(1024) {
+    padding-top: 40px !important;
+    background-size: auto 100%;
+    background-position: 60% -8%;
+  }
+
+
+  @include rm(1220) {
+    padding-bottom: 140px;
+    background-position: cover;
+  }
+
+  &__block {
+    @include rm(800) {
+      max-width: 300px;
+
+    }
+
+    @include rm(1024) {
+      max-width: 500px;
+    }
+  }
+
   &__ttl {
     text-align: center;
     margin-bottom: 50px;
     font-size: 30px;
+    font-family: serif;
+    @include rm(800) {
+      text-align: left;
+    }
+
+    @include rm(1024) {
+      font-size: 50px;
+      text-shadow: 0px 0px 10px rgb(238, 234, 234);
+    }
   }
 
   &__sbtl {
     font-size: 24px;
     text-align: center;
     margin-bottom: 50px;
+    font-family: serif;
+    font-weight: 700;
+    @include rm(800) {
+      text-align: left;
+      font-size: 30px;
+    }
+
+    @include rm(1024) {
+      font-size: 35px;
+      margin-bottom: 110px;
+    }
   }
 
   &__btn {
@@ -42,7 +118,10 @@
     text-align: center;
     min-width: 270px;
     max-width: fit-content;
-  }
- 
-}
 
+    @include rm(800) {
+      margin: 0;
+    }
+  }
+
+}
