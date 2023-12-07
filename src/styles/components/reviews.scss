@@ -1,0 +1,61 @@
+.reviews {
+    .slick-dots .slick-active {
+        background: #FFF;
+      }
+  .slick-dots {
+    bottom: -50px;
+    & li {
+      background: #D0D0D0;
+    }
+  }
+}
+
+.slider-r {
+  color: #FFF;
+  margin-bottom: 50px;
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+  }
+
+  &__txt {
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 1px;
+      background: #FFF;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    font-size: 19px;
+    font-weight: 700;
+  }
+
+  &__order {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  & .arrow {
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff;
+    top: 65px;
+  }
+}

@@ -1,0 +1,54 @@
+.discount {
+  text-align: center;
+
+  &__sbtl {
+    font-family: serif;
+    line-height: 1.1;
+    font-size: 26px;
+    margin-bottom: 10px;
+
+    & span {
+      color: #AA1A66;
+    }
+  }
+
+  &__pack {
+    max-width: 220px;
+    margin: 0 auto 20px;
+  }
+
+  &__txt {
+    margin-bottom: 15px;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  &__btn {
+    padding: 15px 60px;
+   
+    max-width: fit-content;
+    margin: 0 auto 15px;
+  }
+}
+
+.price {
+
+  color: #151515;
+
+  &__old {
+    width: fit-content;
+    text-decoration: line-through;
+    font-size: 20px;
+    font-style: italic;
+    margin-right: 40px;
+  }
+
+  &__new {
+    font-size: 28px;
+  }
+}

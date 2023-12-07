@@ -3,6 +3,7 @@
 @import "about";
 @import "reviews";
 @import "info";
+@import "order";
 @import "discount";
 @import "media";
 @import "last";
@@ -10,4 +11,21 @@
 
 .back-color {
   background: #957BB7;
+}
+.ttl {
+  font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+strong {
+  font-weight: 700;
+}
+.btn {
+  border-radius: 7px;
+  background: #FF6262;
+  color: #FFF;
+}
+.hidden {
+  display: none;
 }

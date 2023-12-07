@@ -1,0 +1,21 @@
+.form {
+  max-width: 270px;
+  margin: auto;
+
+  &__group {
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #C4C4C4;
+  
+    color: #666;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 7px;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 15px 60px;
+    font-size: 22px;
+  }
+}
