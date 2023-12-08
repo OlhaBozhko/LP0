@@ -59,7 +59,13 @@
 
   @include rm(1220) {
     padding-bottom: 140px;
-    background-position: cover;
+    background-size: auto 100%;
+    background-position: 60% -8%;
+  }
+  @include rm(1900) {
+    background-size: auto 111%;
+    background-position: 89%
+
   }
 
   &__block {

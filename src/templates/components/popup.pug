@@ -1,0 +1,25 @@
+.ever-popup-build
+    .my-popup#cloneThis
+        .popup
+            .popup__product
+                img.popup__img(src='img/prod.png' alt='product')
+            .popup__block
+                form.popup__form.x_order_form(action='/submit' method='post')
+                    p.popup__ttl K&uuml;l&ouml;nleges aj&aacute;nlat!
+                    .prices
+                        .prices__item
+                            span.prices__title R&eacute;gi &aacute;r
+                            p.prices__old
+                                span.prices__text.x_price_previous 78
+                                span.prices__currency.x_currency &euro;
+                            span.price__line
+                        .prices__item
+                            span.prices__title &Uacute;j &aacute;r
+                            p.prices__new
+                                span.prices__text.x_price_current 39
+                                span.prices__currency.x_currency &euro;
+                    label.popup__label
+                        input.popup__input(name='name' type='text' placeholder='Név' required='' autocomplete='name')
+                    label.popup__label
+                        input.popup__input(name='phone' type='tel' placeholder='Telefonszám' required='' autocomplete='tel')
+                    button.popup__button.btn(type='submit') COMAND&Abreve; ACUM

@@ -1,4 +1,4 @@
-import './helpers/postDate';
+import './helpers/popup-ev';
 import scrollSmooth from './helpers/smooth-scroll.js';
 
 function main() {
